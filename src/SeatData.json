@@ -1,0 +1,184 @@
+[ 
+      {
+      "column": "", 
+      "ListSeat": [
+        {"num":"1","price":0},
+        {"num":"2","price":0},
+        {"num":"3","price":0},
+        {"num":"4","price":0},
+        {"num":"5","price":0},
+        {"num":"6","price":0},
+        {"num":"7","price":0},
+        {"num":"8","price":0},
+        {"num":"9","price":0},
+        {"num":"10","price":0},
+        {"num":"11","price":0},
+        {"num":"12","price":0}
+      ] 
+    }
+    ,
+    {
+      "column": "A", 
+      "ListSeat": [
+        {"num":"A1","price":75000,"daDat":false},
+        {"num":"A2","price":75000,"daDat":false},
+        {"num":"A3","price":75000,"daDat":false},
+        {"num":"A4","price":75000,"daDat":false},
+        {"num":"A5","price":75000,"daDat":false},
+        {"num":"A6","price":75000,"daDat":false},
+        {"num":"A7","price":75000,"daDat":false},
+        {"num":"A8","price":75000,"daDat":false},
+        {"num":"A9","price":75000,"daDat":false},
+        {"num":"A10","price":75000,"daDat":false},
+        {"num":"A11","price":0,"daDat":true},
+        {"num":"A12","price":0,"daDat":true}
+      ] 
+    },
+    {
+      "column": "B", 
+      "ListSeat": [
+        {"num":"B1","price":75000,"daDat":false},
+        {"num":"B2","price":75000,"daDat":false},
+        {"num":"B3","price":75000,"daDat":false},
+        {"num":"B4","price":75000,"daDat":false},
+        {"num":"B5","price":75000,"daDat":false},
+        {"num":"B6","price":75000,"daDat":false},
+        {"num":"B7","price":75000,"daDat":false},
+        {"num":"B8","price":75000,"daDat":false},
+        {"num":"B9","price":75000,"daDat":false},
+        {"num":"B10","price":75000,"daDat":false},
+        {"num":"B11","price":75000,"daDat":false},
+        {"num":"B12","price":75000,"daDat":false}
+      ] 
+    },
+    {
+      "column": "C", 
+      "ListSeat": [
+        {"num":"C1","price":75000,"daDat":false},
+        {"num":"C2","price":75000,"daDat":false},
+        {"num":"C3","price":75000,"daDat":false},
+        {"num":"C4","price":75000,"daDat":false},
+        {"num":"C5","price":75000,"daDat":false},
+        {"num":"C6","price":75000,"daDat":false},
+        {"num":"C7","price":75000,"daDat":false},
+        {"num":"C8","price":75000,"daDat":false},
+        {"num":"C9","price":75000,"daDat":false},
+        {"num":"C10","price":75000,"daDat":false},
+        {"num":"C11","price":75000,"daDat":false},
+        {"num":"C12","price":75000,"daDat":false}
+      ] 
+    }, {
+      "column": "D", 
+      "ListSeat": [
+        {"num":"D1","price":75000,"daDat":false},
+        {"num":"D2","price":75000,"daDat":false},
+        {"num":"D3","price":75000,"daDat":false},
+        {"num":"D4","price":75000,"daDat":false},
+        {"num":"D5","price":75000,"daDat":false},
+        {"num":"D6","price":75000,"daDat":false},
+        {"num":"D7","price":75000,"daDat":false},
+        {"num":"D8","price":75000,"daDat":false},
+        {"num":"D9","price":75000,"daDat":false},
+        {"num":"D10","price":75000,"daDat":false},
+        {"num":"D11","price":75000,"daDat":false},
+        {"num":"D12","price":75000,"daDat":false}
+      ] 
+    },{
+      "column": "E", 
+      "ListSeat": [
+        {"num":"E1","price":75000,"daDat":false},
+        {"num":"E2","price":75000,"daDat":false},
+        {"num":"E3","price":75000,"daDat":false},
+        {"num":"E4","price":75000,"daDat":false},
+        {"num":"E5","price":75000,"daDat":false},
+        {"num":"E6","price":75000,"daDat":false},
+        {"num":"E7","price":75000,"daDat":false},
+        {"num":"E8","price":75000,"daDat":false},
+        {"num":"E9","price":75000,"daDat":false},
+        {"num":"E10","price":75000,"daDat":false},
+        {"num":"E11","price":75000,"daDat":false},
+        {"num":"E12","price":75000,"daDat":false}
+      ] 
+    },{
+      "column": "F", 
+      "ListSeat": [
+        {"num":"F1","price":75000,"daDat":false},
+        {"num":"F2","price":75000,"daDat":false},
+        {"num":"F3","price":75000,"daDat":false},
+        {"num":"F4","price":75000,"daDat":false},
+        {"num":"F5","price":75000,"daDat":false},
+        {"num":"F6","price":75000,"daDat":false},
+        {"num":"F7","price":75000,"daDat":false},
+        {"num":"F8","price":75000,"daDat":false},
+        {"num":"F9","price":75000,"daDat":false},
+        {"num":"F10","price":75000,"daDat":false},
+        {"num":"F11","price":75000,"daDat":false},
+        {"num":"F12","price":75000,"daDat":false}
+      ] 
+    },{
+      "column": "G", 
+      "ListSeat": [
+        {"num":"G1","price":75000,"daDat":false},
+        {"num":"G2","price":75000,"daDat":false},
+        {"num":"G3","price":75000,"daDat":false},
+        {"num":"G4","price":75000,"daDat":false},
+        {"num":"G5","price":75000,"daDat":false},
+        {"num":"G6","price":75000,"daDat":false},
+        {"num":"G7","price":75000,"daDat":false},
+        {"num":"G8","price":75000,"daDat":false},
+        {"num":"G9","price":75000,"daDat":false},
+        {"num":"G10","price":75000,"daDat":false},
+        {"num":"G11","price":75000,"daDat":false},
+        {"num":"G12","price":75000,"daDat":false}
+      ] 
+    },{
+      "column": "H", 
+      "ListSeat": [
+        {"num":"H1","price":75000,"daDat":false},
+        {"num":"H2","price":75000,"daDat":false},
+        {"num":"H3","price":75000,"daDat":false},
+        {"num":"H4","price":75000,"daDat":false},
+        {"num":"H5","price":75000,"daDat":false},
+        {"num":"H6","price":75000,"daDat":false},
+        {"num":"H7","price":75000,"daDat":false},
+        {"num":"H8","price":75000,"daDat":false},
+        {"num":"H9","price":75000,"daDat":false},
+        {"num":"H10","price":75000,"daDat":false},
+        {"num":"H11","price":75000,"daDat":false},
+        {"num":"H12","price":75000,"daDat":false}
+      ] 
+    },{
+      "column": "I", 
+      "ListSeat": [
+        {"num":"I1","price":75000,"daDat":false},
+        {"num":"I2","price":75000,"daDat":false},
+        {"num":"I3","price":75000,"daDat":false},
+        {"num":"I4","price":75000,"daDat":false},
+        {"num":"I5","price":75000,"daDat":false},
+        {"num":"I6","price":75000,"daDat":false},
+        {"num":"I7","price":75000,"daDat":false},
+        {"num":"I8","price":75000,"daDat":false},
+        {"num":"I9","price":75000,"daDat":false},
+        {"num":"I10","price":75000,"daDat":false},
+        {"num":"I11","price":75000,"daDat":false},
+        {"num":"I12","price":75000,"daDat":false}
+      ] 
+    },{
+      "column": "J", 
+      "ListSeat": [
+        {"num":"J1","price":75000,"daDat":false},
+        {"num":"J2","price":75000,"daDat":false},
+        {"num":"J3","price":75000,"daDat":false},
+        {"num":"J4","price":75000,"daDat":false},
+        {"num":"J5","price":75000,"daDat":false},
+        {"num":"J6","price":75000,"daDat":false},
+        {"num":"J7","price":75000,"daDat":false},
+        {"num":"J8","price":75000,"daDat":false},
+        {"num":"J9","price":75000,"daDat":false},
+        {"num":"J10","price":75000,"daDat":false},
+        {"num":"J11","price":75000,"daDat":false},
+        {"num":"J12","price":75000,"daDat":false}
+      ] 
+    }
+  
+  ]
