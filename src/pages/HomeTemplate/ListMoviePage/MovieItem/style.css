@@ -1,0 +1,37 @@
+/* style.css */
+
+/* Add styles for the card */
+.card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Customize the appearance of the card's image */
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Customize the appearance of the card's title */
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Customize the appearance of the card's text */
+  .card-text {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    padding: 0 10px 10px;
+  }
+  
