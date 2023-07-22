@@ -1,4 +1,3 @@
-import { error } from "jquery";
 import { LIST_MOVIE_FAIL, LIST_MOVIE_REQUEST, LIST_MOVIE_SUCCESS } from "./constants"
 
 const initialState = {
@@ -6,6 +5,8 @@ const initialState = {
     data : null,
     error : null
 }
+
+
 
 const listMovieReducer = (state = initialState, action) => {
     switch (action.type) {  
