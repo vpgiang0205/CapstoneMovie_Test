@@ -7,8 +7,8 @@ export default class HomeTemplate extends Component {
   render() {
     return (
       <div>
-        {/* bo dinh tuyen */}
         <Navbar />
+        {/* bo dinh tuyen */}
         <Outlet />
       </div>
     )

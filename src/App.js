@@ -1,36 +1,18 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Routes } from 'react-router-dom'
+import renderRoutes from './routes';
+import { Suspense } from 'react'
 
-import AdminTemplate from './pages/AdminTemplate'
-import AddUser from './pages/AdminTemplate/AddUser'
-import Dashboard from './pages/AdminTemplate/Dashboard'
-
-import HomeTemplate from './pages/HomeTemplate'
-import AboutPage from './pages/HomeTemplate/AboutPage'
-import HomePage from './pages/HomeTemplate/HomePage'
-import ListMoviePage from './pages/HomeTemplate/ListMoviePage'
 
 function App() {
   return (
-    <div>
+    <Suspense fallback={<div>Loading...</div>}>
       <BrowserRouter>
         <Routes>
-          {/** Home */}
-          <Route path='' element={<HomeTemplate />}>
-            <Route path='' element={<HomePage />} ></Route>
-            <Route path='about' element={<AboutPage />} ></Route>
-            <Route path='list-movie' element={<ListMoviePage />} ></Route>
-          </Route>
-
-          {/** Admin */}
-          <Route path='admin' element={<AdminTemplate />}>
-            <Route path='dashboard' element={<Dashboard />}></Route>
-            <Route path='add-user' element={<AddUser />}></Route>
-          </Route>
+          {renderRoutes()}
         </Routes>
       </BrowserRouter>
-    
-    </div>
+    </Suspense>
   );
 }
 
