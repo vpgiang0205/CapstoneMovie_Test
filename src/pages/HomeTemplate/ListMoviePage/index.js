@@ -4,7 +4,6 @@ import MovieItem from './MovieItem'
 
 import { actFetchListMovie } from './duck/actions'
 import { connect } from 'react-redux'
-import listMovieReducer from './duck/reducer'
 
 class ListMoviePage extends Component {
   constructor(props) {

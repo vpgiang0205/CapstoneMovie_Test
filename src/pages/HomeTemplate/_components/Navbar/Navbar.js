@@ -11,6 +11,7 @@ export default class Navbar extends Component {
                     <NavLink className={({ isActive }) => isActive ? "my-active nav-link" : "nav-link"} to="/list-movie-page">List Movie</NavLink>
                     <NavLink className={({ isActive }) => isActive ? "my-active nav-link" : "nav-link"} to="/booking-page">Booking</NavLink>
                     <NavLink className={({ isActive }) => isActive ? "my-active nav-link" : "nav-link"} to="/hooking-page">Hooking</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "my-active nav-link" : "nav-link"} to="/detail-page/:id">Detail</NavLink>
                 </nav>
             </div>
         )
