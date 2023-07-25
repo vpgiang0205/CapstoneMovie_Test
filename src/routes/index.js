@@ -21,7 +21,12 @@ const routes = [
             {
                 path: "booking-page",
                 element: lazy(() => import("../pages/HomeTemplate/BookingPage")),
+            },
+            {
+                path: "hooking-page",
+                element: lazy(() => import("../pages/HomeTemplate/HooksPage")),
             }
+
         ],
     },
 
