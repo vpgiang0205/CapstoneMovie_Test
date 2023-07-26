@@ -43,12 +43,18 @@ const routes = [
                 element: lazy(() => import("../pages/AdminTemplate/Dashboard")),
 
             },
+            
             {
                 path: "add-user",
                 element: lazy(() => import("../pages/AdminTemplate/AddUser")),
 
             }
         ]
+    },
+
+    {
+        path: "auth",
+        element: lazy(()=> import("../pages/AdminTemplate/AuthPage"))
     }
 ]
 
