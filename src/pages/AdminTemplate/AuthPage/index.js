@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 import { actAuth } from './duck/actions';
 
 export default function AuthPage() {
+  const error = useSelector((state) => state.authReducer.error)
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const [state, setState] = useState({
     taikhoan: "",
     matkhau: ""
   });
 
-  const dispatch = useDispatch()
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -22,19 +24,29 @@ export default function AuthPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log(state);
-    dispatch(actAuth(state))
+    dispatch(actAuth(state,navigate))
   }
 
+  if (localStorage.getItem("UserAdmin")) {
+    return <Navigate replace to = "/admin/dashboard" />
+  }
+
+  const renderError = () => {
+
+    return (
+      error && (
+        <div className=' alert alert-danger'> {error?.response.data.content}</div>
+      )
+    )
+  }
 
   return (
     <div className='container'>
       <div className="form-group">
 
         <h1>Login</h1>
-
+        {renderError()}
         <form onSubmit={handleLogin}>
-
           <div className='form-group'>
             <label>Username:</label>
             <input type="text" name="taikhoan" className="form-control" onChange={handleOnChange} />

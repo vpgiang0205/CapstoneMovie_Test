@@ -1,18 +1,41 @@
 import { AUTH_FAIL, AUTH_REQUEST, AUTH_SUCCESS } from "./constants"
 import api from "../../../../apiUtil"
 
-export const actAuth = (user) => {
+export const actAuth = (user, navigate) => {
     return (dispatch) => {
         dispatch(actAuthRequest())
-            api.post(`QuanLyNguoiDung/DangNhap`,user)
-            .then ((result) => {
-                console.log(result.data)
+        api.post(`QuanLyNguoiDung/DangNhap`, user)
+            .then((result) => {
+                const user = result.data.content
+
+                if (!(user.maLoaiNguoiDung === "QuanTri")) {
+                    // Show error
+                    const error = {
+                        response: {
+                            data: {
+                                content: "Bạn không có quyền truy cập!"
+                            },
+                        },
+                    };
+                    return Promise.reject(error);
+                }
+
+                // Lưu thông tin lên reducer
+                dispatch(actAuthSuccess(user))
+
+                // Lưu trạng thái đăng nhập
+                localStorage.setItem("UserAdmin", JSON.stringify(user))
+
+                // Chuyển hướng
+                navigate("/admin/dashboard", {replace: true})
             })
-            .catch ((error) => {
-                console.log(error)
+            .catch((error) => {
+                dispatch(actAuthFail(error))
             })
+
+
     }
-} 
+}
 
 const actAuthRequest = () => {
     return {
