@@ -1,0 +1,3 @@
+export const CAROUSEL_MOVIE_REQUEST = "@@carouselMovie/CAROUSEL_MOVIE_REQUEST"
+export const CAROUSEL_MOVIE_SUCCESS = "@@carouselMovie/CAROUSEL_MOVIE_SUCCESS" 
+export const CAROUSEL_MOVIE_FAIL = "@@carouselMovie/CAROUSEL_MOVIE_FAIL" 

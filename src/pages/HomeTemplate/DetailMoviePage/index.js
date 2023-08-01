@@ -23,7 +23,6 @@ function DetailMoviePage(props) {
     return (
         <div className='container'>
             <div className='row'>
-
                 <div className='col-4'>
                     <img src={data && data.hinhAnh} className='detail-img' />
                 </div>

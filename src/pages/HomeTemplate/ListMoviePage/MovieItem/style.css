@@ -1,37 +1,87 @@
 /* style.css */
 
+/* ... (other CSS styles) */
+
 /* Add styles for the card */
 .card {
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Customize the appearance of the card's image */
-  .card-img-top {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  /* Customize the appearance of the card's title */
-  .card-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  /* Customize the appearance of the card's text */
-  .card-text {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-    padding: 0 10px 10px;
-  }
-  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Customize the appearance of the card's image */
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Customize the appearance of the card's title */
+.card-title {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Customize the appearance of the card's text */
+.card-text {
+  font-size: 14px;
+  color: white;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* Set the number of lines to display */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+/* style.css */
+
+/* ... (other CSS styles) */
+
+/* Add the updated z-index for the card overlay container */
+.card-overlay-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  /* Set the opacity to 0 (fully transparent) by default */
+  z-index: 10;
+  /* Set the z-index to a higher value */
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition for the opacity */
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-overlay-container {
+  opacity: 0.3;
+  /* Set the opacity to 0.3 (partially transparent) on hover */
+}
+
+.card-body {
+  padding: 30px;
+  opacity: 0;
+  z-index: 12;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+  display: grid;
+  align-items: center;
+}
+
+.card:hover .card-body {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 1;
+  /* Set the opacity to 1 (fully visible) on hover */
+}
