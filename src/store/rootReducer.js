@@ -5,6 +5,8 @@ import detailMovieReducer from "pages/HomeTemplate/DetailMoviePage/duck/reducer"
 import authReducer from "pages/AdminTemplate/AuthPage/duck/reducer";
 import addUserReducer from "pages/AdminTemplate/AddUser/duck/reducer";
 import carouselMovieReducer from "pages/HomeTemplate/HomePage/CarouselMovie/duck/reducer";
+import theatersReducer from "pages/HomeTemplate/HomePage/Theaters/duck/reducer";
+import theatersItemReducer from "pages/HomeTemplate/HomePage/Theaters/TheaterItem/duck/reducer";
 
 const rootReducer = combineReducers({
     // child Reducer
@@ -13,7 +15,9 @@ const rootReducer = combineReducers({
     detailMovieReducer,
     authReducer,
     addUserReducer,
-    carouselMovieReducer
+    carouselMovieReducer,
+    theatersReducer,
+    theatersItemReducer
 });
 
 export default rootReducer;

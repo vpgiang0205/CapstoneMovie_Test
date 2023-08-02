@@ -1,0 +1,7 @@
+.theaters{
+    overflow-y: scroll ;
+}
+
+.theaters__Container{
+    height: 800px;
+}
